@@ -65,7 +65,7 @@ public class InventoryServiceClient {
 
         if (itemResponseEntity.getStatusCode() == HttpStatus.OK) {
             Integer quantity = itemResponseEntity.getBody().getAvailableQuantity();
-            log.info("Available quantity: " + quantity);
+            log.info("Available quantity: 32546567 " + quantity);
             return Optional.ofNullable(itemResponseEntity.getBody());
         } else {
             log.error("Unable to get inventory level for product_code: " + productCode + ", StatusCode: " + itemResponseEntity.getStatusCode());
